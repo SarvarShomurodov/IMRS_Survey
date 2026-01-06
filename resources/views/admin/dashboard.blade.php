@@ -59,17 +59,18 @@
                                 @endforeach
                             </select>
                         </div>
-                        {{-- <div class="col-md-3">
+                        <div class="col-md-3">
                         <label class="form-label">Yil</label>
                         <select class="form-select" name="year">
-                            @for ($y = date('Y'); $y >= 2024; $y--)
+                            <option value="" selected>Barcha yillar</option>
+                            {{-- @for ($y = date('Y'); $y >= 2024; $y--)
                                 <option value="{{ $y }}" {{ $filters['year'] == $y ? 'selected' : '' }}>{{ $y }}</option>
-                            @endfor
+                            @endfor --}}
                         </select>
-                    </div> --}}
+                    </div>
                     </div>
                     <div class="row mt-3">
-                        {{-- <div class="col-md-3">
+                        <div class="col-md-3">
                         <label class="form-label">Chorak</label>
                         <select class="form-select" name="quarter">
                             <option value="">Barcha choraklar</option>
@@ -77,7 +78,7 @@
                                 <option value="{{ $q }}" {{ $filters['quarter'] == $q ? 'selected' : '' }}>{{ $q }}-chorak</option>
                             @endfor
                         </select>
-                    </div> --}}
+                    </div>
                         <div class="col-md-9 d-flex align-items-end">
                             <button type="submit" class="btn btn-primary me-2">
                                 <i class="fas fa-search me-2"></i>Filtrlarni qo'llash

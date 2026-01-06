@@ -30,7 +30,7 @@ Route::prefix('survey')->name('survey.')->group(function () {
 });
 
 // Open Admin Routes - hech qanday himoya yo'q
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('muxabbat')->name('admin.')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
     Route::get('/responses', [AdminController::class, 'responses'])->name('responses');
     Route::get('/responses/{id}', [AdminController::class, 'showResponse'])->name('responses.show');
